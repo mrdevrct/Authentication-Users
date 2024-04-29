@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%231e3266'%3e%3c/rect%3e%3cpath d='M1512 560L0 560 L0 353.66Q3.38 285.05%2c 72 288.43Q139.85 236.28%2c 192 304.13Q284.77 276.9%2c 312 369.67Q340.76 326.43%2c 384 355.19Q437.43 288.62%2c 504 342.05Q529.86 295.91%2c 576 321.77Q654.51 280.28%2c 696 358.79Q724.67 267.46%2c 816 296.13Q868.74 228.87%2c 936 281.61Q1012.79 238.4%2c 1056 315.2Q1131.76 270.96%2c 1176 346.72Q1217.63 316.35%2c 1248 357.98Q1271.6 309.58%2c 1320 333.17Q1402.27 295.44%2c 1440 377.71Q1469.1 334.8%2c 1512 363.9z' fill='%23182f5d'%3e%3c/path%3e%3cpath d='M1488 560L0 560 L0 400.55Q64.08 344.63%2c 120 408.71Q161.02 329.73%2c 240 370.74Q269.62 328.36%2c 312 357.97Q391.93 317.9%2c 432 397.83Q473.13 366.95%2c 504 408.08Q558.22 390.3%2c 576 444.52Q577.75 374.27%2c 648 376.02Q695.9 303.92%2c 768 351.83Q825.49 337.31%2c 840 394.8Q894.84 329.63%2c 960 384.47Q1007.3 311.77%2c 1080 359.07Q1122.91 329.98%2c 1152 372.89Q1199.31 348.19%2c 1224 395.5Q1297.92 349.42%2c 1344 423.34Q1346.03 353.37%2c 1416 355.39Q1478.58 345.97%2c 1488 408.55z' fill='%2325467d'%3e%3c/path%3e%3cpath d='M1488 560L0 560 L0 492.66Q68.46 441.13%2c 120 509.59Q149.84 419.43%2c 240 449.27Q285.68 374.95%2c 360 420.63Q418.56 407.19%2c 432 465.76Q501.79 415.55%2c 552 485.34Q598.69 460.03%2c 624 506.72Q646.54 409.26%2c 744 431.81Q790.65 406.46%2c 816 453.11Q894.8 411.92%2c 936 490.72Q943.07 425.79%2c 1008 432.86Q1079.38 384.24%2c 1128 455.62Q1207.91 415.53%2c 1248 495.45Q1314.65 442.1%2c 1368 508.75Q1411.27 432.02%2c 1488 475.3z' fill='%23356cb1'%3e%3c/path%3e%3cpath d='M1512 560L0 560 L0 504.68Q71.74 504.42%2c 72 576.17Q89.53 473.7%2c 192 491.23Q273.6 500.83%2c 264 582.43Q305.85 504.27%2c 384 546.12Q430.86 472.98%2c 504 519.84Q569.18 465.02%2c 624 530.2Q673.62 459.82%2c 744 509.43Q838.78 484.21%2c 864 578.98Q880.13 523.11%2c 936 539.23Q981.99 465.22%2c 1056 511.2Q1099.08 482.27%2c 1128 525.35Q1207.99 485.35%2c 1248 565.34Q1274.39 519.73%2c 1320 546.12Q1346.85 500.96%2c 1392 527.81Q1467.19 483%2c 1512 558.19z' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.box h1 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+.box .inputBox {
+  position: relative;
+}
+.box .inputBox input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.box .inputBox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label {
+  top: -18px;
+  left: 0;
+  color: #03a9f4;
+  font-size: 12px;
+}
+.register {
+  color: #03a9f4;
+}
+.box input[type="submit"] {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #03a9f4;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+a {
+  color: #fff;
+  margin-left: 2%;
+}
+
+.register-btn {
+  width: 100%;
+}
+
+button a {
+  color: #000;
+  width: 70px;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  min-height: 100vh;
+}
+
+.main {
+  width: 80%;
+  padding: 2rem 2rem 2rem 4rem;
+}
+
+.index {
+  text-align: center;
+  padding-top: 17rem;
+}
+
+/* sidebar */
+
+.sidebar {
+  width: 250px;
+  height: 500px;
+  min-width: 200px;
+  border-radius: 0 20px 20px 0;
+  margin: auto 0;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 1rem 0rem;
+  gap: 20px;
+  background-color: white;
+}
+
+.sidebar-title {
+  color: black;
+  padding: 0rem 2rem 1rem 0.8rem;
+  font-family: sans-serif;
+  border-bottom: 1px solid black;
+}
+
+.sidebar-links {
+  list-style: none;
+  display: flex;
+  padding: 0rem 5rem 0rem 1.4rem;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 20px;
+  font-family: sans-serif;
+}
+.sidebar-links li {
+  padding-bottom: 1rem;
+}
+.sidebar-links a {
+  color: black;
+  display: flex;
+  gap: 15px;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+.sidebar-links li:last-child {
+  border-bottom: 0;
+}
+
+/* sidebar */
